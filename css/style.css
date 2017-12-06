@@ -21,6 +21,7 @@
     content: url(../img/boralogo.png);
     background-color: red;
     margin: 20px auto 20px;
+    border-radius: 5px;
     
 }
 
@@ -29,14 +30,15 @@ header{
     width: 20%;
     height: 100vh;
     position: fixed;
-    float: left;
+/*    float: left;*/
 }
 
 div.wrapper{
     background-color: antiquewhite;
     height: 100vh;
-    width: 80%;
-    float: right;
+/*    width: 80%;*/
+    margin-left: 20%;
+/*    float: right;*/
 }
 
 div.home-class{
@@ -87,7 +89,10 @@ div.brandname{
     color: #1B122B;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
 }
+
 
 #tagline{
     font-size: 1.5vw;
@@ -133,22 +138,22 @@ p#bora-first{
 
 div.about-class{
     background-color: #E8D8D1;
-    height: 40vh;
+    height: 100vh;
 }
 
 div.services-class{
     background-color: #2C3C51;
-    height: 40vh;
+    height: 100vh;
 }
 
 div.project-class{
     background-color: #5A7484;
-    height: 40vh;
+    height: 100vh;
 }
 
 div.gallery-class{
     background-color: #E2C7C0;
-    height: 40vh;
+    height: 100vh;
 }
 
 .gal-pic{
@@ -207,4 +212,29 @@ nav > ul > li > a:hover{
     background-color: #2C3C51;
     color: aliceblue;
     box-shadow: 5px 5px #5A7484;
+}
+
+
+/*
+*
+*
+* Toggle Icon
+*
+*/
+
+#toggleIcon,
+#toggleIcon1 {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 20%;
+    padding: 15px;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+#toggleIcon1 {
+    left: 0;
 }
